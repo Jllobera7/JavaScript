@@ -46,9 +46,9 @@ document.write("La palabra " + palabra + " tiene " + palabra.length + " letras."
 
 document.write("Ejercicio 6" + "<br>");//Ejercicio 6
 
-const MESES = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", 
-    "Junio", "Julio", "Agosto", "Septiembre", 
-    "Octubre", "Noviembre", "Diciembre"];
+const MESES = ["Enero, ", "Febrero, ", "Marzo, ", "Abril, ", "Mayo, ", 
+    "Junio, ", "Julio, ", "Agosto, ", "Septiembre, ", 
+    "Octubre, ", "Noviembre, ", "Diciembre <br>"];
 for(let i=0;i<MESES.length;i++){
     console.log(MESES[i]);
     document.write(MESES[i]);
@@ -89,14 +89,35 @@ else {
 
 document.write("Ejercicio 8" + "<br>");//Ejercicio 8
 
-var Numero=parseInt(prompt("Introduzca un numero :" + "<br>"));
+var Numero=parseInt(prompt("Introduzca un numero :"));
 
 if(Numero%2==0){
-    console.log("El numero" + Numero+ " es par.");
-    document.write("El numero" + Numero+ " es par.");
+  console.log("El numero " + Numero+ " es par.");
+  document.write("El numero " + Numero+ " es par." +"<br>");
 }
 else{
-    console.log("El numero" + Numero+ " es impar.");
-    document.write("El numero" + Numero +" es impar.");
+  console.log("El numero " + Numero+ " es impar.");
+  document.write("El numero " + Numero +" es impar." +"<br>");
 }
 
+document.write("Ejercicio 9" + "<br>");//Ejercicio 9
+
+var cadena=(prompt("Introduzca una palabra:" ));
+cadena.split("");
+var cadenaInvertida="";
+
+for (let i =cadena.length -1; i>=0 ; i--){
+cadenaInvertida+= cadena[i];
+}
+document.write(cadenaInvertida + "<br>")
+console.log(cadenaInvertida + "<br>")
+
+document.write("Ejercicio 10" + "<br>");//Ejercicio 10
+
+var persona = {
+  nombre:"juan",
+  edad:26,
+  telefono:123456789
+};
+document.write("nombre : "+ persona.nombre+ ", edad: "+persona.edad+", telefono: "+persona.telefono+".<br>")
+console.log("nombre : "+ persona.nombre+ ", edad: "+persona.edad+", telefono: "+persona.telefono+".")
