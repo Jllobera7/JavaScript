@@ -72,3 +72,47 @@ function factorial() {
 }
 
 factorial();
+
+
+//Ejercicio 6
+document.write("<br>Ejercicio 6 <br>");
+
+function calcularSalario(){
+    let nombre = prompt("Introduce tu nombre");
+    let salario = parseInt(prompt("Introduce tu salario"));
+    let edad = parseInt(prompt("Introduce tu edad"));
+     
+    // Si el salario está entre 1000 y 2000 (inclusive)
+    if (salario <= 2000 && salario >= 1000){
+        if(edad > 45){
+            salario += salario * 0.03;
+        }
+        else{
+            salario += salario * 0.1;
+        }  
+    }
+    // Si el salario es menor que 1000
+    if(salario < 1000){
+        if(edad < 30){
+            salario = 1100;
+        }
+        else if(edad > 45){
+            salario += salario * 0.15;
+        }
+        else if( edad >= 30 && edad <= 45){
+            salario += salario * 0.03;
+        }
+    }
+    // Si el salario es superior a 2000, no cambia
+    alert("El salario de "+nombre+" es de "+salario+"€");
+}
+calcularSalario();
+
+//Ejercicio 7
+document.write("<br>Ejercicio 7 <br>");
+
+function juegoAdivinarNumero(){
+
+
+    
+}
