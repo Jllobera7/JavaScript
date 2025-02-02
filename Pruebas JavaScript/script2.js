@@ -8,8 +8,7 @@ return palabras.length;
 let frase=prompt("Introduce una frase para contar sus palabras: ")
 document.write("la frase tiene "+contarPalabras(frase)+" palabras.")
 
-//Ejercicio 2
-document.write("Ejercicio 2 <br>");
+
 //Ejercicio 2
 document.write("<br> Ejercicio 2 <br>");
 
@@ -21,18 +20,6 @@ function estrellitas() {
     document.write(estrella + "<br>");
     estrella += "*";
   }
-}
-estrellitas();
-
-//Ejercicio 3
-document.write("<br> Ejercicio 3 <br>");
-    var estrella="*";
-
-for(let i =0 ; i<5; i++){
-    document.write(estrella + "<br>");
-    estrella = estrella + "*";
-}
-   
 }
 estrellitas();
 
@@ -84,3 +71,4 @@ function factorial() {
     }
 }
 
+factorial();
