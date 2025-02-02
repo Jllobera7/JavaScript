@@ -70,12 +70,17 @@ mayusculasMinisculas("Hola buenas tardes.Que tal estás?");
 //Ejercicio 5
 document.write("<br>Ejercicio 5 <br>");
 
-function factorial(){
-    let numerito = parseInt(prompt("Introduzca un numero pra obtener su factorial :"))
-    if (numerito == 0){
-        return 1
+function factorial() {
+    while (true) {
+        let numerito = parseInt(prompt("Introduzca un número para obtener su factorial, para salir pulse '0' "));
+        if (numerito === 0) {
+            break;
+        }
+        let resultado = 1;
+        for (let i = numerito; i >= 1; i--) {
+            resultado *= i;
+        }
+        alert(`El factorial de ${numerito} es ${resultado}.`);
     }
-    if(numerito<1){
-        document.write("")
-    }
-}   
+}
+
