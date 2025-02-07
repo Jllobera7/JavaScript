@@ -61,6 +61,7 @@ function sumaNumeros(numero){
     for(let i = 0 ; i <= numero ; i++){
         suma += i;
     }
+    return suma;
 }
 
 document.write("<br> Ejercicio 6 <br>");
